@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>注册计划通</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- container -->
+	<div class="container">
+		<div class="row">
+			<!-- Article main content -->
+			<article class="col-xs-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title"><strong>计划通！</strong></h1>
+				</header>
+				
+				<div class="form-login container">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3 class="thin text-center">注册您的账户</h3>
+							<p class="text-center text-muted">这里是注册，想要登录请点 <a href="index.html">这里</a>。 </p>
+							<hr>
+
+							<form id="form">
+								<div class="row top-margin">
+									<div class="col-sm-6">
+										<label for="name">姓名 <span class="text-danger">*</span></label>
+										<input id="name" type="text" class="form-control" required>
+									</div>
+
+									<div class="col-sm-6">
+										<label for="stu_code">学号 <span class="text-danger">*</span></label>
+										<input id="stu_code" type="text" class="form-control" required>
+									</div>
+								</div>
+
+								<div class="panel panel-danger top-margin" style="display:none" id="name_warning">
+									<div class="panel-heading">姓名太长，请勿多于10个字符</div>
+								</div>
+								<div class="panel panel-danger top-margin" style="display:none" id="stucode_warning">
+									<div class="panel-heading">学号长度错误，请输入10位学工号</div>
+								</div>
+
+								<div class="top-margin">
+									<label for="inputEmail">邮箱地址 <span class="text-danger">*</span></label>
+									<input id="inputEmail" type="email" class="form-control" required>
+								</div>
+
+								<div class="row top-margin">
+									<div class="col-xs-6">
+										<label for="check_code">邮箱验证码 <span class="text-danger">*</span></label>
+										<input id="check_code" type="text" class="form-control" required>
+									</div>
+									<div class="col-xs-6 text-left">
+										<button id="code_send" class="btn btn-action" type="button" style="margin-top:20px" >发送验证码</button>
+									</div>
+								</div>
+
+								<div class="panel panel-danger top-margin" style="display:none" id="checkcode_warning">
+									<div class="panel-heading">邮箱验证码错误</div>
+								</div>
+
+								<div class="row top-margin">
+									<div class="col-sm-6">
+										<label for="inputPassword">密码 <span class="text-danger">*</span></label>
+										<input id="inputPassword" type="password" class="form-control" required>
+									</div>
+									<div class="col-sm-6">
+										<label for="confirmPassword">确认密码 <span class="text-danger">*</span></label>
+										<input id="confirmPassword" type="password" class="form-control" required>
+									</div>
+								</div>
+
+								<div class="panel panel-danger top-margin" style="display:none" id="pwd_warning">
+									<div class="panel-heading">密码太长或太短，请输入6-18位密码</div>
+								</div>
+
+								<div class="panel panel-danger top-margin" style="display:none" id="confirm_warning">
+									<div class="panel-heading">两次密码输入不一致</div>
+								</div>
+
+								<div class="panel panel-danger top-margin" style="display:none" id="warning">
+								</div>
+
+								<div class="top-margin">
+									<label>
+										<input type="checkbox" required>
+										我已阅读并接受<a href="terms.html">《计划通用户协议》</a>
+									</label>
+								</div>
+
+								<hr>
+
+								<div class="top-margin">
+									<button id="submit_btn" class="btn btn-lg btn-primary btn-block" type="submit">注  册</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				
+			</article>
+			<!-- /Article -->
+
+		</div>
+	</div>	<!-- /container -->
+
+
+	<footer id="footer" class="top-space">
+
+	</footer>
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery-3.2.1.js"></script>
+	<script src="assets/js/jquery-cookie.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+	<script src="assets/js/operate_codesend.js"></script>
+	<script src="assets/js/operate_signup.js"></script>
+	<script src="assets/js/load_footer.js"></script>
+
+</body>
+</html>

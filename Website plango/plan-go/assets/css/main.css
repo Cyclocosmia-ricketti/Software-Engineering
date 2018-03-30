@@ -1,0 +1,304 @@
+/* Header */
+#head { background:#181015 url( ../images/bg_header.jpg) no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+#head.secondary { height:100px; min-height: 100px; padding-top:0px; }
+	#head .lead { font-family:"Open sans", Helvetica, Arial; font-size:44px; margin-bottom:6px; color:white; line-height:1.15em; }
+	#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; }
+		#head .tagline a { color:#fff; }
+	#head .btn { margin-bottom:10px;}
+	#head .btn-default { text-shadow: none; background:transparent; color:rgba(255,255,255,.5); -webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); -moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); background: transparent; }
+		#head .btn-default:hover,
+		#head .btn-default:focus { color:rgba(255,255,255,.8); -webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); -moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); background: transparent; }
+		#head .btn-default:active,
+		#head .btn-default.active { color:#fff; -webkit-box-shadow:inset 0px 0px 0px 3px #fff; -moz-box-shadow:inset 0px 0px 0px 3px #fff; box-shadow:inset 0px 0px 0px 3px #fff; background: transparent; }
+
+@media (max-width: 767px) {
+	#head { min-height:420px; padding-top:160px; }
+	#head .lead { font-size: 34px; }
+}
+
+/* Autohide navbar */
+.slideUp { top:-100px; }
+.headroom { -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out; }
+
+/* Log in form */
+.form-login {
+	max-width: 400px;
+	align: center;
+}
+/* Highlights (in jumbotron in most cases) */
+.highlight { margin-top:40px; }
+	.h-caption { text-align: center; }
+	.h-caption i { display:block; font-size: 54px; color:#382526; margin-bottom:36px; }
+	.h-caption h4 { color:#382526; font-size: 16px; font-weight: bold; margin-bottom:20px; }
+	.h-body { }
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 { font-family:"Open sans", Helvetica, Arial; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; }
+blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
+label { color: #777; }
+.thin { font-weight:300; }
+.page-title { margin-top:20px; margin-left:20px; font-weight:300; }
+.text-muted { color:#888; }
+.breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }
+ul.list-spaces li{ margin-bottom:10px; }
+
+/* Helpers */
+.container-full { margin: 0 auto; width: 100%; }
+.top-space { margin-top: 60px; }
+.top-margin { margin-top: 15px; }
+
+img { max-width:100%; }
+img.pull-right { margin-left: 10px; }
+img.pull-left { margin-right: 10px; }
+#map { width:100%; height:280px; }
+#social { margin-top:50px; margin-bottom:50px; }
+	#social .wrapper { width:340px; margin:0 auto; }
+.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+/* Main content block */
+.maincontent {}
+input[type=date] {
+    line-height:0;
+}
+
+/* Sidebars */
+.sidebar { padding-top:36px; padding-bottom:30px; }
+	.sidebar .widget { margin-bottom:20px; }
+	.sidebar h1, .sidebar .h1, .sidebar h2, .sidebar .h2, .sidebar h3, .sidebar .h3 { margin-top:20px; }
+
+/* Footer */
+.footer1 { background: #232323; padding: 30px 0 0 0; font-size: 12px; color: #999; }
+	.footer1 a { color: #ccc; }
+		.footer1 a:hover {color: #fff; }
+	.footer1 .widget { margin-bottom:30px; }
+	.footer1 .widget-title { font-size: 17px; font-weight: bold; color: #ccc; margin: 0 0 20px; }
+	.footer1 .entry-meta { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 0 0 35px 0; padding: 2px 0; color: #888888; font-size: 12px; font-size: 0.75rem; }
+		.footer1 .entry-meta a { color: #333333; }
+		.footer1 .entry-meta .meta-in { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 10px 0; }
+	.follow-me-icons { font-size:30px; }
+		.follow-me-icons i { float:left; margin:0 10px 0 0; }
+
+.footer2 { background: #191919; padding: 15px 0; color: #777; font-size: 12px; }
+	.footer2 a { color: #aaa; }
+		.footer2 a:hover { color: #fff; }
+		.footer2 p { margin: 0; }
+
+	.widget-simplenav { margin-left:-5px; }
+	.widget-simplenav a{ margin:0 5px; }
+
+/*Calendar*/
+.before, .after{
+    color: #cccccc;
+    font-size: 40px
+}
+.bigdate{
+    color:#000000;
+    font-size: 100px;
+    text-align: center;
+
+}
+.block{
+    width: 13%;
+    text-align: left;
+    vertical-align: top;
+    border: 5px solid #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+.block4{
+    background-color:#86a9c0;
+}
+.block5{
+    /*background-color:#ffffff;*/
+
+}
+.block_content{
+    /*width: 50px;*/
+    overflow: hidden;
+    color: #ffffff;
+}
+.block_content4{
+}
+.block_content{
+    /*height: 51px;*/width: 100%;height: 0;padding-bottom: 100%;
+}
+.block_content6{
+}
+.calendar_s {
+    width:100%;
+    height:100%;
+    color:#428bca;
+    margin:auto;
+}
+.calnav {
+    position:relative;
+    margin-left:0;
+    top:0;
+    height:20%;
+    background-color:#86a9c0;
+}
+.calendar {
+    position:relative;
+    float:left;
+    width:70%;
+    height:80%;
+    margin-top: -20px;
+    background-color:#eeeeee;
+}
+.chinaday{
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+    color: #CCCCCC;
+    height: 0;padding-bottom: 50%;
+    font-family:simsun;
+}
+.chinaday6{
+}
+.chinaday5{
+    /*margin-top:47px;*/
+}
+.chinaday4{
+}
+.clickable{
+    color:#428bca;
+    cursor:pointer
+ }
+.clickBlock4, .clickBlock4:hover{
+    width: 50px;
+}
+.clickBlock5, .clickBlock5:hover{
+    color: #fff;
+}
+.clickBlock6, .clickBlock6:hover{
+    width: 50px;
+}
+.dateinfo {
+    position:relative;
+    float:right;
+    width:30%;
+    height:80%;
+    background-color:#ffffff/*#c0d5e0*/;
+}
+.ddltitle{
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.ddlcontent {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.eachday{
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+    text-align: center;
+    color: black;
+}
+.jumbotron{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.link{
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.number{
+    font-size: 24px;
+    line-height: 100%;
+    font-family:Arial;
+    padding-top: 12%;
+    text-align: center;
+}
+.number6{
+    color: #F00000;
+    font-size: 40px
+}
+.number5{
+    /*margin-top: 10px;*/
+    color: #000000;
+    font-size: 40px
+}
+.number4{
+    color: #ffffff;
+    font-size: 40px
+}
+.rest{
+    width: 16px; height: 15px;
+}
+.restBlock{
+    background-color: #fff6eb;
+    border: 1px solid #ffdb9d;
+    color: #bc5016;
+}
+.sidebartext{
+    font-size:18px;
+    line-height:36px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.smalldate{
+    text-align: center;
+    font-size: 36px;
+    color: #000000;
+}
+table{
+    width: 100%;
+    padding:0 5% 5%;
+}
+.tablehead td{
+    font-size: 16px;
+    text-align: center;
+    background: #fff;
+}
+.today{color: #fff;overflow: hidden;
+}
+.workrest{
+    position: absolute;
+}
+.weekendNum{
+    font-size: 24px;
+    line-height: 100%;
+    font-family:Arial;
+    padding-top: 12%;
+    text-align: center;
+    overflow: hidden;
+    color: #bc5016;
+}
+.workDot{
+    position: absolute;
+    margin-left: 41px;
+    height: 9px;
+    width: 9px;
+    overflow: hidden;
+}
+.workDot6{
+}
+.workDot5{
+}
+.workDot4{
+}
+.work{
+    width: 16px; height: 15px;
+}
+.workBlock{
+    background-color: #f6f6f6;
+    border: 1px solid #e1e1e1;
+    color: #595959;
+}

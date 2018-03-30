@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>计划通-发布消息</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="person_homepage.html"><img src="assets/images/jihuatong.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="person_homepage.html">返回个人主页</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+
+
+				<header class="page-header">
+					<h1 class="page-title">发布消息</h1>
+				</header>
+				
+				<p>
+					你可以在这里发布消息及其deadline，所有加入项目的人都会收到通知，若有deadline则还能在日历上查看。
+				</p>
+				<br>
+					<form id="form" method="post" enctype="multipart/form-data">
+						<div class="row">
+							<div class="col-sm-4">
+								<input id="event_title" class="form-control" type="text" placeholder="标题" required>
+							</div>
+							<div class="col-sm-2" id="selectdate">
+							</div>
+							<div class="col-sm-2">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" id="is_deadline" onclick='check();'>无deadline
+									</label>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea id="event_content" placeholder="详细内容" class="form-control" rows="9"></textarea>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+
+							<div class="col-sm-6 text-left">
+								<label>文件上传</label>
+								<input type="file" name="pop_media_put_input" class="pop_media_put_input" multiple="multiple" />
+								<div class="pop_media_put_list">
+								</div>
+							</div>
+
+							<div class="col-sm-12 text-right">
+								<input id="SendMessage" class="btn btn-action" type="submit" value="发  布">
+							</div>
+						</div>
+					</form>
+				<br>
+
+		<br><br><br>
+
+	</div>	<!-- /container -->
+
+	<footer id="footer" class="top-space">
+
+
+	</footer>
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery-3.2.1.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+	<script src="assets/js/load_footer.js"></script>
+	<script src="assets/js/operate_upload.js"></script>
+	<script src="assets/js/operate_SendMessage.js"></script>
+	<script>
+		var filldate= '<input class="form-control" type="date" id="sdate" placeholder="deadline(如2000-1-1)">';
+		var disabledate='<input class="form-control" type="date" disabled id="sdate" placeholder="deadline(如2000-1-1)">';
+		document.getElementById("selectdate").innerHTML=filldate;
+        function check(){
+            var checkbox = document.getElementById('is_deadline');//
+            if(checkbox.checked){
+                document.getElementById("selectdate").innerHTML=disabledate;
+            }else{
+                document.getElementById("selectdate").innerHTML=filldate;
+            }
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="AMP">
+
+	<title id="main-title">计划通-项目主页</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="person_homepage.html"><img src="assets/images/jihuatong.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="person_homepage.html">个人主页</a></li>
+					<li><a id="project_setting">项目设置</a></li>
+					<li><a class="btn" id="page_log">登出</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+		<header class="page-header">
+			<div class="row">
+				<h1 id="project_name" class="page-title col-md-9">
+					项目名称
+				</h1>
+				<div id="cancel_lesson" class="page-title btn btn-action col-md-2" style="right:30px">
+					<strong>退 出 项 目</strong>
+				</div>
+			</div>
+		</header>
+		<div class="row"> <!--日历部分-->
+			<div class="col-md-12">
+				<div class="calendar_s">
+					<div id="maincalendar">
+					</div>
+					<div class="dateinfo">
+						<div  class="link">
+							<u id="lastyear">上一年</u>
+							<u id="lastmonth">上个月</u>
+							<u id="backnow">回到现在</u>
+							<u id="nextmonth">下个月</u>
+							<u id="nextyear">下一年</u>
+						</div>
+						<br>
+						<div id="displaysmall" class="smalldate">
+						</div>
+						<div id="displaydate" class="bigdate">
+						</div>
+						<br>
+						<div id="currentddl">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Article main content -->
+			<article id="notice" class="col-md-8 maincontent">
+				<div class="page-header">
+					<h3 class="page-title">最新通知</h3>
+				</div>
+
+			</article>
+			<!-- /Article -->
+
+			<!-- Sidebar -->
+			<aside class="col-md-4">
+
+				<div id="project_introduction" class="row widget col-xs-12">
+					<div class="page-header" >
+						<h3 class="page-title">项目介绍</h3>
+					</div>
+				</div>
+
+				<div  class="row widget col-xs-12 ">
+
+					<div id="project_detail" class="sidebartext">
+
+					</div>
+
+				</div>
+
+			</aside>
+			<!-- /Sidebar -->
+
+		</div>
+	</div>	<!-- /container -->
+
+
+
+	<footer id="footer" class="top-space">
+
+
+	</footer>
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery-3.2.1.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+	<script src="assets/js/operate_logout.js"></script>
+	<script src="assets/js/operate_project_homepage.js"></script>
+	<script src="assets/js/load_footer.js"></script>
+
+</body>
+</html>
